@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 
   <head>
     <meta charset='utf-8' />
@@ -76,4 +77,76 @@ $ git checkout gh-pages
     
 
   </body>
+=======
+<head>
+<meta charset="utf-8">
+<title>CMD模块</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link href="http://resource.xiaomi.net/lib/bootstrap/2.2.3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="./assets/css/docs.css" rel="stylesheet" type="text/css" />
+<link href="./assets/js/google-code-prettify/prettify.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="http://www.xiaomi.com/favicon.ico">
+</head>
+<body data-spy="scroll" data-target="#navbar" onload="prettyPrint()">
+  <div class="header">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="./index.html">CMD模块</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav" id>
+              <!-- <li><a href="./index.html">首页</a></li>
+              <li class="active"><a href="./base.html">基础框架</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span2" id="navbar">
+        <ul id="sidebar" data-spy="affix" class="nav nav-tabs nav-stacked bs-docs-sidenav">
+        </ul>
+      </div>
+      <div class="span10">
+
+        <section id="jquery" class="listElem">
+          <div class="page-header">
+            <h1>jQuery <a href="http://jquery.com/" target="_blank">http://jquery.com/</a></h1>
+          </div>
+          <pre class="prettyprint linenums"></pre>
+          <p>
+            <span>压缩</span>
+            <a href="http://resource.xiaomi.net/lib/jquery/1.8.3/jquery.min.js" target="_blank">1.8.3</a>
+            <br>
+            <span>未压缩</span>
+            <a href="http://resource.xiaomi.net/lib/jquery/1.8.3/jquery.js" target="_blank">1.8.3</a>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p>需要托管其他前端类库请邮件: <a href="mailto:miuife@xiaomi.com">MIUI前端</a> </p>
+      <p></p>
+    </div>
+  </div>
+<script src="http://resource.xiaomi.net/lib/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://resource.xiaomi.net/lib/bootstrap/2.2.3/js/bootstrap.min.js"></script>
+<script>
+var listElems = [];
+$(".listElem").each(function(i, elem) {
+  var id = $(elem).attr("id");
+  listElems.push('<li><a href="#');
+  listElems.push(id);
+  listElems.push('">');
+  listElems.push(id);
+  listElems.push('</a></li>');
+});
+$("#sidebar").append(listElems.join(''));
+</script>
+<script src="./assets/js/google-code-prettify/prettify.js"></script>
+</body>
+>>>>>>> abc2970441c9d41f9a21f37676f58133c13e13c2
 </html>
